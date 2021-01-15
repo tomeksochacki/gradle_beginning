@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+    compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
+}
+
+dependencies {
+    compile 'com.google.guava:guava:27.0-jre'
+}
+
+/*
+apply plugin: 'java'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task runAllTests{
+    println 'now I am checking if all tests are passing, in theory'
+}
+
+task buildJar(dependsOn: runAllTests){
+    println 'now I am building JAR file, in theory'
+}
+*/
